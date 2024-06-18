@@ -3,6 +3,7 @@
     <div v-if="loading">Loading...</div>
     <div v-else-if="error">{{ error }}</div>
     <div v-else>
+      <p>olaaaaaaaaaaaaaaaaaa</p>
       <p><strong>ID:</strong> {{ id }}</p>
       <p><strong>Nombre:</strong> {{ user.firstName }}</p>
       <p><strong>Apellidos:</strong> {{ user.lastName }}</p>
