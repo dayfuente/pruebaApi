@@ -3,17 +3,24 @@
     <div v-if="loading">Loading...</div>
     <div v-else-if="error">{{ error }}</div>
     <div v-else>
-      <p>olaaaaaaaaaaaaaaaaaa</p>
       <p><strong>ID:</strong> {{ id }}</p>
-      <p><strong>Nombre:</strong> {{ user.firstName }}</p>
+      <!-- <p><strong>Nombre:</strong> {{ user.firstName }}</p>
       <p><strong>Apellidos:</strong> {{ user.lastName }}</p>
-      <p><strong>Email:</strong> {{ user.email }}</p>
-      <input  v-model="user.email"
+      <p><strong>Email:</strong> {{ user.email }}</p> -->
+      <div class="row">
+        <div class="col-10">
+          <input  v-model="user.email"
           id="inputEmail"
           class="form-control form-control-lg"
           type="text"
           placeholder="Email"
           aria-label="Email">
+        </div>
+        <div class="col-2">
+          <button class="btn btn-info mt-1">Actualizar</button>
+        </div>
+      </div>
+     
     </div>
   </div>
 </template>
